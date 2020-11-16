@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Table with Collapsible Rows</title>
+  <link rel='stylesheet' href='foundation.min.css'>
+</head>
+<body>
+
+<div class="row colum noselect" id="users">
+<div class="row">
+  <p>&nbsp;</p>
+  <div class="column medium-6">
+    <p class="title">Order List For E-Commerce</p>
+  </div>
+  <div class="column medium-6">
+    <input class="search" type="text" placeholder="Search" />
+  </div>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>Order ID<a class="shot sort" data-sort="Order_ID">&#8645;</a></th>
+	  <th>Customer Name<a class="shot sort" data-sort="Customer_Name">&#8645;</a></th>
+	  <th>Trust Score<a class="shot sort" data-sort="Trust_Score">&#8645;</a></th>
+      <th>Order Date & Time<a class="shot sort" data-sort="Order_Date">&#8645;</a></th>
+      <th>No. Of Products<a class="shot sort" data-sort="Number_Product">&#8645;</a></th>
+	  <th>Order Value<a class="shot sort" data-sort="Order_Value">&#8645;</a></th>
+	  <th>Coupons & Discount</th>
+	  <th>Status<a class="shot sort" data-sort="Status">&#8645;</a></th>
+	  <th>Delivery Date</th>
+    </tr>
+  </thead>
+  <tbody class="list noselect">
+
+    <tr class="zoom hoverTable">
+      <td class="Order_ID">ORD268212</td>
+      <td class="Customer_Name">Kacy Martlew</td>
+	  <td>
+		<div class="set-size charts-container">
+		<div class="pie-wrapper progress-95 style-2">
+			<span class="label Trust_Score"  style = "color: forestgreen;">0.95<span class="smaller"></span></span>
+			<div class="pie">
+				<div class="left-side half-circle"></div>
+				<div class="right-side half-circle"></div>
+			</div>
+			<div class="shadow"></div>
+		</div>
+	  </td>
+	  <td class="Order_Date">8/4/2020 15:58</td>
+      <td class="Number_Product">3</td>
+	  <td class="Order_Value">7500</td>
+	  <td class="Coupon">Coupon: None<br>Discount: 0</td>
+	  <td class="Status" style = "color: red;">Cancelled</td>
+      <td class="hidden-info">N\A
+        <div class="hidden-row-content" style="display:none">
+           <p><b>Coustomer Information</b><br>Email : kmartlewe@unblog.fr<br>Phone : 718-617-0131<br>District : New York<br>City : Brooklyn<br>Shipping Address : 7111 Thompson Parkway</p>
+        </div>
+      </td>
+	</tr>
+	
+    <tr class="zoom hoverTable">
+      <td class="Order_ID">ORD043679</td>
+      <td class="Customer_Name">Rina Costerd</td>
+	  <td>
+		<div class="set-size charts-container">
+			<div class="pie-wrapper progress-73 style-2">
+				<span class="label Trust_Score"  style = "color:  #5cae73;">0.73<span class="smaller"></span></span>
+				<div class="pie">
+					<div class="left-side half-circle"></div>
+					<div class="right-side half-circle"></div>
+				</div>
+				<div class="shadow"></div>
+			</div>
+	  </td>
+	  <td class="Order_Date">8/5/2020 12:25</td>
+      <td class="Number_Product">5</td>
+	  <td class="Order_Value">6000</td>
+	  <td class="Coupon">Coupon: None<br>Discount: 0</td>
+	  <td class="Status">Shipped</td>
+      <td class="hidden-info">N\A
+        <div class="hidden-row-content" style="display:none">
+           <p><b>Coustomer Information</b><br>Email : rcosterd0@netlog.com<br>Phone : 214-391-5720<br>District : Texas<br>City : Dallas<br>Shipping Address : 20 Sunfield Parkway</p>
+        </div>
+      </td>
+	</tr>
+	
+    <tr class="zoom hoverTable">
+      <td class="Order_ID">ORD599767</td>
+      <td class="Customer_Name">Patty Curgenuer</td>
+	   <td>
+		<div class="set-size charts-container">
+			<div class="pie-wrapper progress-96 style-2">
+				<span class="label Trust_Score"  style = "color:forestgreen;">0.96<span class="smaller"></span></span>
+				<div class="pie">
+					<div class="left-side half-circle"></div>
+					<div class="right-side half-circle"></div>
+				</div>
+				<div class="shadow"></div>
+			</div>
+	  </td>
+	  <td class="Order_Date">8/7/2020 14:21</td>
+      <td class="Number_Product">3</td>
+	  <td class="Order_Value">4500</td>
+	  <td class="Coupon" style = "background-color: #0080002b;">Coupon: VOUCHER30<br>Discount: 1350</td>
+	  <td class="Status" style = "color: #5cae73;">Confirmed</td>
+      <td class="hidden-info">N\A
+        <div class="hidden-row-content" style="display:none">
+           <b>Coustomer Information</b><br>Email : pcurgenuerk@ucla.edu<br>Phone : 909-590-8965<br>District : California<br>City : San Bernardino<br>Shipping Address : 09686 Dahle Street
+        </div>
+      </td>
+	</tr>
+	
+	<tr class="zoom hoverTable">
+      <td class="Order_ID">ORD159465</td>
+      <td class="Customer_Name">Rachele Vampouille</td>
+	   <td>
+		<div class="set-size charts-container">
+			<div class="pie-wrapper progress-34 style-2">
+				<span class="label Trust_Score"  style = "color:orange;">0.34<span class="smaller"></span></span>
+				<div class="pie">
+					<div class="left-side half-circle"></div>
+					<div class="right-side half-circle"></div>
+				</div>
+				<div class="shadow"></div>
+			</div>
+	  </td>
+	  <td class="Order_Date">8/7/2020 19:28</td>
+      <td class="Number_Product">2</td>
+	  <td class="Order_Value">4000</td>
+	  <td class="Coupon" style = "background-color: #0080002b;">Coupon: DISCOUNT20<br>Discount: 800</td>
+	  <td class="Status" style = "color: purple;">Returned</td>
+      <td class="hidden-info">9/20/2020
+        <div class="hidden-row-content" style="display:none">
+           <p><b>Coustomer Information</b><br>Email : rvampouille5@nps.gov<br>Phone : 757-424-0653<br>District : Virginia<br>City : Norfolk<br>Shipping Address : 1619 American Ash Drive</p>
+        </div>
+      </td>
+	</tr>
+	
+	<tr class="zoom hoverTable">
+		<td class="Order_ID">ORD538806</td>
+		<td class="Customer_Name">Nickolaus Wearden</td>
+		<td>
+		  <div class="set-size charts-container">
+		  <div class="pie-wrapper progress-78 style-2">
+			  <span class="label Trust_Score"  style = "color: #5cae73;">0.78<span class="smaller"></span></span>
+			  <div class="pie">
+				  <div class="left-side half-circle"></div>
+				  <div class="right-side half-circle"></div>
+			  </div>
+			  <div class="shadow"></div>
+		  </div>
+		</td>
+		<td class="Order_Date">8/8/2020 13:26</td>
+		<td class="Number_Product">4</td>
+		<td class="Order_Value">1000</td>
+		<td class="Coupon">Coupon: None<br>Discount: 0</td>
+		<td class="Status" style = "color: red;">Cancelled</td>
+		<td class="hidden-info">N\A
+		  <div class="hidden-row-content" style="display:none">
+			 <p><b>Coustomer Information</b><br>Email : nwearden3@wordpress.org<br>Phone : 862-174-7118<br>District : New Jersey<br>City : Paterson<br>Shipping Address : 4 Chive Place</p>
+		  </div>
+		</td>
+	  </tr>
+
+	  <tr class="zoom hoverTable">
+		<td class="Order_ID">ORD099928</td>
+		<td class="Customer_Name">Libbie Kildahl</td>
+		 <td>
+		  <div class="set-size charts-container">
+			  <div class="pie-wrapper progress-87 style-2">
+				  <span class="label Trust_Score"  style = "color:forestgreen;">0.87<span class="smaller"></span></span>
+				  <div class="pie">
+					  <div class="left-side half-circle"></div>
+					  <div class="right-side half-circle"></div>
+				  </div>
+				  <div class="shadow"></div>
+			  </div>
+		</td>
+		<td class="Order_Date">8/9/2020 3:53</td>
+		<td class="Number_Product">4</td>
+		<td class="Order_Value">4500</td>
+		<td class="Coupon" style = "background-color: #0080002b;">Coupon: EID30<br>Discount: 1350</td>
+		<td  class="Status" style = "color: #5cae73;">Confirmed</td>
+		<td class="hidden-info">N\A
+		  <div class="hidden-row-content" style="display:none">
+			 <b>Coustomer Information</b><br>Email : lkildahlg@opensource.org<br>Phone : 414-736-8473<br>District : Wisconsin<br>City : San Milwaukee<br>Shipping Address : 9176 Sutherland Way</p>
+		  </div>
+		</td>
+	  </tr>
+
+	  <tr class="zoom hoverTable">
+		<td class="Order_ID">ORD130510</td>
+		<td class="Customer_Name">Somerset Worner</td>
+		<td>
+		  <div class="set-size charts-container">
+		  <div class="pie-wrapper progress-60 style-2">
+			  <span class="label Trust_Score"  style = "color: #5cae73;">0.6<span class="smaller"></span></span>
+			  <div class="pie">
+				  <div class="left-side half-circle"></div>
+				  <div class="right-side half-circle"></div>
+			  </div>
+			  <div class="shadow"></div>
+		  </div>
+		</td>
+		<td class="Order_Date">8/10/2020 0:15</td>
+		<td class="Number_Product">4</td>
+		<td class="Order_Value">5500</td>
+		<td class="Coupon">Coupon: None<br>Discount: 0</td>
+		<td class="Status" style = "color: red;">Cancelled</td>
+		<td class="hidden-info">N\A
+		  <div class="hidden-row-content" style="display:none">
+			 <p><b>Coustomer Information</b><br>Email : swornern@over-blog.com<br>Phone : 605-647-5715<br>District : South Dakota<br>City : Sioux Falls<br>Shipping Address : 464 Sommers Alley</p>
+		  </div>
+		</td>
+	  </tr>
+
+	  <tr class="zoom hoverTable">
+		<td class="Order_ID">ORD735250</td>
+		<td class="Customer_Name">Delcina Mackelworth</td>
+		 <td>
+		  <div class="set-size charts-container">
+			  <div class="pie-wrapper progress-94 style-2">
+				  <span class="label Trust_Score"  style = "color:forestgreen;">0.94<span class="smaller"></span></span>
+				  <div class="pie">
+					  <div class="left-side half-circle"></div>
+					  <div class="right-side half-circle"></div>
+				  </div>
+				  <div class="shadow"></div>
+			  </div>
+		</td>
+		<td class="Order_Date">8/11/2020 8:30</td>
+		<td class="Number_Product">1</td>
+		<td class="Order_Value">1500</td>
+		<td class="Coupon" style = "background-color: #0080002b;">Coupon: EID30<br>Discount: 450</td>
+		<td  class="Status" style = "color: #5cae73;">Confirmed</td>
+		<td class="hidden-info">N\A
+		  <div class="hidden-row-content" style="display:none">
+			 <b>Coustomer Information</b><br>Email : dmackelworthl@abc.net.au<br>Phone : 305-858-0285<br>District : Florida<br>City : Hialeah<br>Shipping Address : 5 Shelley Circle</p>
+		  </div>
+		</td>
+	  </tr>
+
+	  <tr class="zoom hoverTable">
+		<td class="Order_ID">ORD939217</td>
+		<td class="Customer_Name">Babita Pickavant</td>
+		 <td>
+		  <div class="set-size charts-container">
+			  <div class="pie-wrapper progress-76 style-2">
+				  <span class="label Trust_Score"  style = "color:#5cae73;">0.76<span class="smaller"></span></span>
+				  <div class="pie">
+					  <div class="left-side half-circle"></div>
+					  <div class="right-side half-circle"></div>
+				  </div>
+				  <div class="shadow"></div>
+			  </div>
+		</td>
+		<td class="Order_Date">8/11/2020 19:34</td>
+		<td class="Number_Product">7</td>
+		<td class="Order_Value">3000</td>
+		<td class="Coupon" style = "background-color: #0080002b;">Coupon: VOUCHER30<br>Discount: 900</td>
+		<td class="Status" style = "color: rgb(220, 212, 7);">Processing</td>
+		<td class="hidden-info">N\A
+		  <div class="hidden-row-content" style="display:none">
+			 <b>Coustomer Information</b><br>Email : bpickavantc@sciencedirect.com<br>Phone : 301-454-6166<br>District : Maryland<br>City : Silver Spring<br>Shipping Address : 46 Stephen Drive</p>
+		  </div>
+		</td>
+	  </tr>
+
+	  <tr class="zoom hoverTable">
+		<td class="Order_ID">ORD302920</td>
+		<td class="Customer_Name">Kare Pickrill</td>
+		<td>
+		  <div class="set-size charts-container">
+		  <div class="pie-wrapper progress-58 style-2">
+			  <span class="label Trust_Score"  style = "color: #e6b800;">0.58<span class="smaller"></span></span>
+			  <div class="pie">
+				  <div class="left-side half-circle"></div>
+				  <div class="right-side half-circle"></div>
+			  </div>
+			  <div class="shadow"></div>
+		  </div>
+		</td>
+		<td class="Order_Date">8/13/2020 6:02</td>
+		<td class="Number_Product">5</td>
+		<td class="Order_Value">4500</td>
+		<td class="Coupon">Coupon: None<br>Discount: 0</td>
+		<td class="Status" style = "color: forestgreen;">Delivered</td>
+		<td class="hidden-info">9/4/2020
+		  <div class="hidden-row-content" style="display:none">
+			 <p><b>Coustomer Information</b><br>Email : kpickrill2@bing.com<br>Phone : 321-918-9372<br>District : Florida<br>City : Orlando<br>Shipping Address : 03672 Rusk Crossing</p>
+		  </div>
+		</td>
+	  </tr>
+
+	  <tr class="zoom hoverTable">
+		<td class="Order_ID">ORD043679</td>
+		<td class="Customer_Name">Rina Costerd</td>
+		<td>
+		  <div class="set-size charts-container">
+			  <div class="pie-wrapper progress-73 style-2">
+				  <span class="label Trust_Score"  style = "color:  #5cae73;">0.73<span class="smaller"></span></span>
+				  <div class="pie">
+					  <div class="left-side half-circle"></div>
+					  <div class="right-side half-circle"></div>
+				  </div>
+				  <div class="shadow"></div>
+			  </div>
+		</td>
+		<td class="Order_Date">8/5/2020 12:25</td>
+		<td class="Number_Product">5</td>
+		<td class="Order_Value">6000</td>
+		<td class="Coupon">Coupon: None<br>Discount: 0</td>
+		<td class="Status">Shipped</td>
+		<td class="hidden-info">N\A
+		  <div class="hidden-row-content" style="display:none">
+			 <p><b>Coustomer Information</b><br>Email : rcosterd0@netlog.com<br>Phone : 214-391-5720<br>District : Texas<br>City : Dallas<br>Shipping Address : 20 Sunfield Parkway</p>
+		  </div>
+		</td>
+	  </tr>
+
+  </tbody>
+</table>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js'></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
