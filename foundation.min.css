@@ -33,6 +33,16 @@ hr {
 	overflow: visible;
 }
 
+th, td {
+	padding: 0.25rem;
+  }
+ 
+th {
+	position: sticky;
+	top: -1px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+	}
+
 main {
 	display: block;
 }
@@ -280,6 +290,10 @@ button {
 
 .is-hidden {
 	display: none!important;
+}
+
+.stack-top{
+	z-index: 9;
 }
 
 .row {
@@ -1888,7 +1902,9 @@ p+.stat {
 
 	img {
 		max-width: 100%!important;
-	}@	page {
+	}
+
+	@page {
 		margin: .5cm;
 	}
 
@@ -2438,7 +2454,6 @@ select[multiple] {
 	border-color: #fefefe transparent transparent;
 	position: relative;
 	top: .4em;
-	display: inline-block;
 	float: right;
 	margin-left: 1em;
 }
@@ -3188,7 +3203,6 @@ select[multiple] {
 	border-right-style: solid;
 	border-color: transparent #1779ba transparent transparent;
 	display: inline-block;
-	vertical-align: middle;
 	margin-right: .75rem;
 	border-left-width: 0;
 }
@@ -4946,7 +4960,7 @@ a.thumbnail image {
 }
 
 .top-bar-title {
-	display: inline-block;
+	display: block;
 	float: left;
 	padding: .5rem 1rem .5rem 0;
 }
@@ -5152,11 +5166,6 @@ a.thumbnail image {
   font-size: 2.7em;
 }
 
-.charts-container:after {
-  clear: both;
-  content: '';
-}
-
 .pie-wrapper {
   height: 1em;
   width: 1em;
@@ -5228,6 +5237,16 @@ a.thumbnail image {
 }
 .pie-wrapper.progress-1 .pie .right-side {
   display: none;
+}
+.pie-wrapper.progress-4 .pie .half-circle {
+border-color: red;
+}
+.pie-wrapper.progress-4 .pie .left-side {
+-webkit-transform: rotate(14.4deg);
+		transform: rotate(14.4deg);
+}
+.pie-wrapper.progress-4 .pie .right-side {
+display: none;
 }
 .pie-wrapper.progress-5 .pie .half-circle {
   border-color: #ff0000;

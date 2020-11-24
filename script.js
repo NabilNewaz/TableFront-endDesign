@@ -13,7 +13,6 @@ $('tbody tr').on('click', function(){ // table row is clicked
   }
 });
 
-
 // list.js settings
 var options = {
   valueNames: [ 'Order_ID', 'Customer_Name','Trust_Score', 'Order_Date','Number_Product','Order_Value','Status','Coupon', 'hidden-info' ]
